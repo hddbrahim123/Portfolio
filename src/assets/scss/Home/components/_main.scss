@@ -1,0 +1,50 @@
+.home{
+    margin-top: $header-height;
+}
+.min-h{
+    min-height: calc(100vh - #{$header-height});
+}
+
+.home__title {
+    font-size: 48px;
+    font-weight: 800;
+    color: $first-color;
+    text-transform: capitalize;
+}
+
+.home__sub__title{
+    font-size: 22px;
+    font-weight: 500;
+    color: $text-color;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: $first-color;
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 500;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: $black-color;
+    color: $white-color;
+}
+
+.home__social__icons i{
+    font-size: 28px;
+    font-weight: 500;
+    color: $text-color;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.home__social__icons i:hover{
+    color: $first-color;
+}
+@media screen and (max-width:768px){
+    .home__title{
+        font-size: 24px;
+    }
+    .home__title span{
+        font-size: 32px;
+    }
+}

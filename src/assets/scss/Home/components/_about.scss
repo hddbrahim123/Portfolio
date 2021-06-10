@@ -1,0 +1,17 @@
+.about{
+    @media screen and (max-width:968px) {
+        display: flex;
+        flex-direction: column;        
+    }
+    &__img{
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width:968px) {
+    .about{
+        &__img{
+            width: 150px !important;
+        }
+    }
+}

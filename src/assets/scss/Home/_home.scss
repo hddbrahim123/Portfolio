@@ -1,0 +1,10 @@
+@import 'structure/header';
+@import 'components/main';
+@import 'components/about';
+@import 'components/counter';
+
+.page-home{
+    margin-top: $head-height;
+    min-height: 100vh !important;
+    background-color: $grey-color;
+}

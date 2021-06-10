@@ -1,0 +1,27 @@
+.counter{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    padding: 6rem 0;
+    opacity: .7;
+    z-index: 1 !important;
+    
+
+    
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .7;
+        z-index: 1;
+    }
+    &__box {
+        color: #fff !important;
+        z-index: 100 !important;
+        font-size: $medium-font-size;
+    }
+}

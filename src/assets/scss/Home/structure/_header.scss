@@ -1,0 +1,101 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $white-color;
+    // background-color: transparent;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    margin: 0px 10px 0px 10px;
+
+    &__brand{
+        cursor: pointer;
+    }
+    &__brand img{
+        width: 100px;
+    }
+
+    &__cart{
+        cursor: pointer;
+    }
+
+    &__toggle{
+        display: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 968px) {
+            display: block;            
+        }
+    }
+
+    &__menu{
+        @media screen and (max-width:968px) {
+            position: fixed;
+            top: $header-height;
+            left: -100%;
+            width: 80%;
+            min-height: 100vh;
+            background-color: $white-color;
+            transition: .3s;
+        }
+    }
+    &__list{
+        margin-top: 18px;
+    }
+
+    &__item{
+        margin-bottom: 18px;
+        padding: 10px;
+
+    }
+  
+    &__link{
+        margin: 18px;
+        color: $first-color; 
+        font-size: $smaller-font-size;    
+        font-weight: $font-bold;
+        text-transform: uppercase; 
+        transition: .4s;
+        cursor: pointer;  
+    }
+    &__link:hover {
+        color: $text-color;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $first-color;
+    }
+    &__active {
+        color: $text-color;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $first-color;
+    }
+}
+
+.show{
+    left: 0;
+}
+
+//media queris
+@media screen and (min-width:968px) {
+    .nav{
+        margin: 0px 40px 0px 40px;
+        padding: 0px 60px 0px 60px;
+
+        &__list{
+            display: flex;
+        }
+
+        &__link{
+            font-size: $title-font-size;
+            letter-spacing: 1px;
+        }
+        &__brand img{
+            width: 200px;
+        }
+    }
+}
