@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {init} from 'ityped'
-import img from '../../assets/images/0.jpg'
+import profile from '../../assets/images/profile.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { SubProfile } from '../../Components/Comon/Data'
@@ -28,7 +28,7 @@ const Main = ()=>{
               
               <div data-aos="fade-left" className="col-lg-5">
                <div className="home_img">
-                 <img src={img} alt="img" className="rounded-circle mw-100" />
+                 <img src={profile} alt="img" className=" mw-100" />
                </div> 
               </div>
               <div data-aos="fade-right" className="col-lg-7 order-lg-first"> 
